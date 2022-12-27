@@ -76,14 +76,80 @@ header {
 /*Estilização Corpo*/
 
 .content{
-  max-width: 800px;
-  margin: 50px auto;
+  max-width: 1000px;
+  margin: 80px auto;
   display: grid;
-  background-color: yellow;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: auto 125px;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
 }
 
+/*cards*/
+
+.card-destaque{
+  display: flex;
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.card-geral{
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.card-slide{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.card-slide .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-slide strong{
+  font-size: 22px;
+  color: #444;
+  font-weight: bold;
+}
+
+.card-slide p{
+  width: 80%;
+  color: #666;
+  font-weight: 400;
+}
+
+/*splide*/
+
+.splide{
+  width: 100%;
+  height: 100%;
+}
+
+.splide img{
+  width: 100%;
+  max-height: 300px;
+}
+
+.splide__pagination{
+  bottom: 1.5rem !important;
+  justify-content: stretch !important;
+  left: -1rem !important;
+}
+
+.splide__pagination__page{
+  margin: 0 !important;
+  border-radius: 0 !important;
+  width: 70px !important;
+  background: #75599e !important;
+}
+.splide__pagination__page.is-active{
+  background: #de2f5f !important;
+  transform: none !important;
+}
 
 /*Estilização do footer*/
 
