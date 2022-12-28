@@ -76,7 +76,7 @@ header {
 /*Estilização Corpo*/
 
 .content{
-  max-width: 1000px;
+  max-width: 800px;
   margin: 80px auto;
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -134,6 +134,10 @@ header {
   max-height: 300px;
 }
 
+.splide.splide-geral img{
+  max-height: 250px;
+}
+
 .splide__pagination{
   bottom: 1.5rem !important;
   justify-content: stretch !important;
@@ -146,9 +150,25 @@ header {
   width: 70px !important;
   background: #75599e !important;
 }
+.splide01 .splide__pagination__page{
+  background: #75bfce !important;
+}
+
+.splide02 .splide__pagination__page{
+  background: #6ec4c4 !important;
+}
 .splide__pagination__page.is-active{
   background: #de2f5f !important;
   transform: none !important;
+}
+
+.splide01 .splide__pagination__page.is-active,
+.splide02 .splide__pagination__page.is-active{
+  background: #6875b1 !important;
+}
+
+.splide02 .splide__pagination__page{
+  width: 50px !important;
 }
 
 /*Estilização do footer*/
