@@ -135,7 +135,11 @@ header {
 }
 
 .splide.splide-geral img{
-  max-height: 250px;
+  max-height: 270px;
+}
+
+.splide.splide-geral .text{
+  gap: 30px;
 }
 
 .splide__pagination{
