@@ -95,6 +95,7 @@ header {
 .card-geral{
   grid-column: span 2;
   grid-row: span 4;
+  max-width: 100%;
 }
 
 .card-slide{
