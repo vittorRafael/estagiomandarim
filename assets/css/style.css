@@ -152,7 +152,7 @@ header {
 .splide__pagination__page{
   margin: 0 !important;
   border-radius: 0 !important;
-  width: 70px !important;
+  width: 5rem !important;
   background: #75599e !important;
 }
 .splide01 .splide__pagination__page{
@@ -173,7 +173,7 @@ header {
 }
 
 .splide02 .splide__pagination__page{
-  width: 50px !important;
+  width: 3rem !important;
 }
 
 /*Estilização do footer*/
@@ -207,4 +207,40 @@ footer {
 
 .rodape a{
   color: #555;
+}
+
+@media (max-width: 800px){
+  .content{
+    margin: 60px 30px;
+    grid-auto-rows: minmax(90px, auto);
+  }
+  .card-geral{
+    grid-column: span 4;
+  }
+  .splide.splide-geral img{
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 500px){
+  .content{
+    grid-auto-rows: minmax(80px, auto);
+  }
+  .splide__pagination__page{
+    width: 3rem !important;
+  }
+  .splide02 .splide__pagination__page{
+    width: 2rem !important;
+  }
+  header{
+    padding: 15px 25px;
+  }
+  .zigzag,
+  .maiorQ,
+  .mulher{
+    display: none;
+  }
+  .splide.splide-geral .text{
+    gap: 5px;
+  }
 }
